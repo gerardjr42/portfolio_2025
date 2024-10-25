@@ -23,7 +23,7 @@ export default function Homepage() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#141415] text-white overflow-hidden font-helvetica">
+    <div className="relative min-h-screen bg-[#141415] text-white overflow-hidden font-helvetica ">
       <StarField count={200} />
 
       {/* Headphones recommendation */}
@@ -98,16 +98,16 @@ export default function Homepage() {
         </motion.div>
       </motion.div>
 
-      {/* Sound toggle - moved to bottom */}
+      {/* Sound toggle - centered at the bottom */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+        className="absolute bottom-8 left-0 right-0 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 2 }}
       >
         <button
           onClick={toggleSound}
-          className="text-white hover:text-[#2DD4BF]"
+          className="text-white hover:text-[#2DD4BF] mb-2"
         >
           {soundEnabled ? (
             <Volume2 className="w-6 h-6" />
@@ -115,7 +115,7 @@ export default function Homepage() {
             <VolumeX className="w-6 h-6" />
           )}
         </button>
-        <p className="mt-2 text-xs uppercase text-[#2DD4BF]/60 ">
+        <p className="text-xs uppercase text-[#2DD4BF]/60 text-center">
           [Enter the experience {soundEnabled ? "with" : "without"} sound]
         </p>
       </motion.div>
