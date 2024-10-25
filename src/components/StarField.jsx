@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Star = ({ x, y, size, duration }) => (
   <motion.div
-    className="absolute rounded-full bg-white"
+    className="absolute rounded-full bg-white pointer-events-none"
     style={{
       left: `${x}%`,
       top: `${y}%`,
@@ -21,6 +21,8 @@ const Star = ({ x, y, size, duration }) => (
       repeat: Infinity,
       ease: "linear",
     }}
+    aria-hidden="true"
+    tabIndex="-1"
   />
 );
 

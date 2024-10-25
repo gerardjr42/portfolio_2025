@@ -67,7 +67,7 @@ export default function Homepage() {
             </motion.span>
           </h1>
           <motion.p
-            className="max-w-md mx-auto text-base text-[#2DD4BF]"
+            className="max-w-md mx-auto text-base text-[#2DD4BF]/70"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
@@ -90,7 +90,7 @@ export default function Homepage() {
           }}
         >
           <button
-            className="absolute inset-0 rounded-full bg-[#141415] text-white flex items-center justify-center transition-all duration-300 border-2 border-white hover:border-[#2DD4BF]"
+            className="absolute inset-0 rounded-full bg-[#141415] text-white flex items-center justify-center transition-all duration-300 border-2 border-white hover:border-[#2DD4BF]/70"
             onClick={handleEnterButtonClick}
           >
             ENTER
@@ -98,7 +98,7 @@ export default function Homepage() {
         </motion.div>
       </motion.div>
 
-      {/* Sound toggle - centered at the bottom */}
+      {/* Sound toggle */}
       <motion.div
         className="absolute bottom-8 left-0 right-0 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export default function Homepage() {
             <VolumeX className="w-6 h-6" />
           )}
         </button>
-        <p className="text-xs uppercase text-[#2DD4BF]/60 text-center">
+        <p className="text-xs uppercase text-[#2DD4BF] text-center">
           [Enter the experience {soundEnabled ? "with" : "without"} sound]
         </p>
       </motion.div>
