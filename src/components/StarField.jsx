@@ -5,8 +5,8 @@ const Star = ({ x, y, size, duration }) => (
   <motion.div
     className="absolute rounded-full bg-white"
     style={{
-      x,
-      y,
+      left: `${x}%`,
+      top: `${y}%`,
       width: size,
       height: size,
     }}
@@ -27,14 +27,27 @@ const Star = ({ x, y, size, duration }) => (
 export const StarField = ({ count = 100 }) => {
   const [stars, setStars] = useState([]);
 
-  useEffect(() => {
-    const newStars = Array.from({ length: count }, () => ({
-      x: Math.random() * window.innerWidth - window.innerWidth / 2,
-      y: Math.random() * window.innerHeight - window.innerHeight / 2,
-      size: Math.random() * 3 + 1,
-      duration: Math.random() * 30 + 10,
+  const generateStars = () => {
+    return Array.from({ length: count }, () => ({
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 2 + 0.5,
+      duration: Math.random() * 10 + 4,
     }));
-    setStars(newStars);
+  };
+
+  useEffect(() => {
+    setStars(generateStars());
+
+    const handleResize = () => {
+      setStars(generateStars());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [count]);
 
   return (
