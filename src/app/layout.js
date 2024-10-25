@@ -1,8 +1,10 @@
-import Navbar from "@/components/Navbar";
+import { LoadingProvider } from "@/contexts/LoadingContext";
 import { SoundProvider } from "@/contexts/SoundContext";
 import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+
+import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,10 +34,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <SoundProvider>
-          <Navbar />
-          {children}
-        </SoundProvider>
+        <LoadingProvider>
+          <SoundProvider>
+            <Navbar />
+            {children}
+          </SoundProvider>
+        </LoadingProvider>
       </body>
     </html>
   );

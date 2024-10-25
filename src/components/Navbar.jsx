@@ -1,19 +1,30 @@
 "use client";
 
+import { useLoading } from "@/contexts/LoadingContext";
 import { motion } from "framer-motion";
 import { Headphones } from "lucide-react";
 import Link from "next/link";
 import { useAudio } from "../hooks/useAudio";
 
 export default function Navbar() {
+  const { isLoading } = useLoading();
   const playClickSound = useAudio("/sounds/mouse-click.mp3", 0.5);
 
   const handleNavClick = (e) => {
     playClickSound();
   };
 
+  if (isLoading) {
+    return null;
+  }
+
   return (
-    <nav className="fixed z-50 w-full bg-transparent bg-opacity-60 text-white">
+    <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed z-50 w-full bg-transparent bg-opacity-60 text-white"
+    >
       {/* Headphones recommendation */}
       <motion.div
         className="absolute top-4 left-4 flex items-center space-x-2 align-middle justify-center"
@@ -45,6 +56,6 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }
