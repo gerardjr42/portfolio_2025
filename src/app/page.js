@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatedName } from "@/components/AnimatedName";
 import { StarField } from "@/components/StarField";
 import { motion } from "framer-motion";
 import { Headphones, Volume2, VolumeX } from "lucide-react";
@@ -48,23 +49,9 @@ export default function Homepage() {
       >
         <div className="text-center space-y-4">
           <h1 className="text-6xl font-bold tracking-wider text-white font-playfair">
-            <motion.span
-              className="inline-block"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1 }}
-            >
-              Gerardo
-            </motion.span>
+            <AnimatedName text="Gerardo" />
             <br />
-            <motion.span
-              className="inline-block"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-            >
-              Garcia
-            </motion.span>
+            <AnimatedName text="Garcia" />
           </h1>
           <motion.p
             className="max-w-md mx-auto text-base text-[#2DD4BF]/70"
