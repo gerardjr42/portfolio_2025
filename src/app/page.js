@@ -3,7 +3,7 @@
 import { AnimatedName } from "@/components/AnimatedName";
 import { StarField } from "@/components/StarField";
 import { motion } from "framer-motion";
-import { Headphones, Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX } from "lucide-react";
 import { useState } from "react";
 import { useAudio } from "../hooks/useAudio";
 
@@ -26,19 +26,6 @@ export default function Homepage() {
   return (
     <div className="relative min-h-screen bg-[#141415] text-white overflow-hidden font-helvetica ">
       <StarField count={200} />
-
-      {/* Headphones recommendation */}
-      <motion.div
-        className="absolute top-4 left-4 flex items-center space-x-2 align-middle justify-center"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <Headphones className="w-4 h-4" />
-        <span className="text-xs uppercase">
-          Use your headphones for the best experience
-        </span>
-      </motion.div>
 
       {/* Main content */}
       <motion.div

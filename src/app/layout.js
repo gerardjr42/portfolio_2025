@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
