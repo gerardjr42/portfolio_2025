@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import { SoundContext } from "../contexts/SoundContext";
 
 export function useAudio(src, volume = 1) {
   const audio = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const { soundEnabled } = useContext(SoundContext);
 
   useEffect(() => {
     audio.current = new Audio(src);
@@ -21,7 +23,7 @@ export function useAudio(src, volume = 1) {
   }, [src, volume]);
 
   const play = () => {
-    if (isLoaded && audio.current) {
+    if (soundEnabled && isLoaded && audio.current) {
       audio.current.currentTime = 0;
       audio.current
         .play()
@@ -29,5 +31,5 @@ export function useAudio(src, volume = 1) {
     }
   };
 
-  return { play, isLoaded };
+  return play;
 }

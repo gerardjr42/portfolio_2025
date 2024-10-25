@@ -4,23 +4,16 @@ import { AnimatedName } from "@/components/AnimatedName";
 import { StarField } from "@/components/StarField";
 import { motion } from "framer-motion";
 import { Volume2, VolumeX } from "lucide-react";
-import { useState } from "react";
+import { useContext } from "react";
+import { SoundContext } from "../contexts/SoundContext";
 import { useAudio } from "../hooks/useAudio";
 
 export default function Homepage() {
-  const [soundEnabled, setSoundEnabled] = useState(true);
-  const { play: playClickSound, isLoaded: isClickSoundLoaded } = useAudio(
-    "/sounds/mouse-click.mp3",
-    0.5
-  );
-
-  const toggleSound = () => {
-    setSoundEnabled(!soundEnabled);
-  };
+  const { soundEnabled, toggleSound } = useContext(SoundContext);
+  const playClickSound = useAudio("/sounds/mouse-click.mp3", 0.5);
 
   const handleEnterButtonClick = () => {
-    if (soundEnabled && isClickSoundLoaded) playClickSound();
-    // Add any additional logic for when the ENTER button is clicked
+    playClickSound();
   };
 
   return (

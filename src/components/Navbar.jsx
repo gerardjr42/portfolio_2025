@@ -3,8 +3,15 @@
 import { motion } from "framer-motion";
 import { Headphones } from "lucide-react";
 import Link from "next/link";
+import { useAudio } from "../hooks/useAudio";
 
 export default function Navbar() {
+  const playClickSound = useAudio("/sounds/mouse-click.mp3", 0.5);
+
+  const handleNavClick = (e) => {
+    playClickSound();
+  };
+
   return (
     <nav className="fixed z-50 w-full bg-transparent bg-opacity-60 text-white">
       {/* Headphones recommendation */}
@@ -21,15 +28,21 @@ export default function Navbar() {
       </motion.div>
       <ul className="mx-auto my-2 flex w-full items-center justify-center space-x-2 text-center align-middle sm:space-x-4">
         <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
-          <Link href="/about">About Me</Link>
+          <Link href="/about" onClick={handleNavClick}>
+            About Me
+          </Link>
         </li>
         <span>/</span>
         <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects" onClick={handleNavClick}>
+            Projects
+          </Link>
         </li>
         <span>/</span>
         <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog" onClick={handleNavClick}>
+            Blog
+          </Link>
         </li>
       </ul>
     </nav>
