@@ -32,7 +32,7 @@ export const StarField = ({ count = 100 }) => {
       x: Math.random() * 100,
       y: Math.random() * 100,
       size: Math.random() * 2 + 0.5,
-      duration: Math.random() * 10 + 4,
+      duration: Math.random() * 30 + 10,
     }));
   };
 
