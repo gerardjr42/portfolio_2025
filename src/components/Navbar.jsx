@@ -39,7 +39,13 @@ export default function Navbar() {
       </motion.div>
       <ul className="mx-auto my-2 flex w-full items-center justify-center space-x-2 text-center align-middle sm:space-x-4">
         <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
-          <Link href="/about" onClick={handleNavClick}>
+          <Link href="/" onClick={handleNavClick}>
+            Home
+          </Link>
+        </li>
+        <span>/</span>
+        <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
+          <Link href="/aboutme" onClick={handleNavClick}>
             About Me
           </Link>
         </li>

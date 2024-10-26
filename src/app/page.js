@@ -6,6 +6,7 @@ import { LoadingScreen } from "@/components/loading-screen";
 import { useLoading } from "@/contexts/LoadingContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { Volume2, VolumeX } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useContext, useEffect } from "react";
 import { SoundContext } from "../contexts/SoundContext";
 import { useAudio } from "../hooks/useAudio";
@@ -14,6 +15,7 @@ export default function Homepage() {
   const { soundEnabled, toggleSound } = useContext(SoundContext);
   const playClickSound = useAudio("/sounds/mouse-click.mp3", 0.5);
   const { isLoading, setIsLoading } = useLoading();
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -25,6 +27,7 @@ export default function Homepage() {
 
   const handleEnterButtonClick = () => {
     playClickSound();
+    router.push("/aboutme");
   };
 
   return (

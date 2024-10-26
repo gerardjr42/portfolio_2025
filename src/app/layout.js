@@ -4,7 +4,7 @@ import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import Navbar from "@/components/Navbar";
+import NavbarWrapper from "@/components/NavbarWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         <LoadingProvider>
           <SoundProvider>
-            <Navbar />
+            <NavbarWrapper />
             {children}
           </SoundProvider>
         </LoadingProvider>
