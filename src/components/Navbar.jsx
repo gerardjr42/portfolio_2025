@@ -55,12 +55,6 @@ export default function Navbar() {
             Projects
           </Link>
         </li>
-        <span>/</span>
-        <li className="text-white text-opacity-100 transition duration-300 ease-in-out hover:text-[#2DD4BF] hover:text-opacity-90 hover:underline hover:underline-offset-4">
-          <Link href="/blog" onClick={handleNavClick}>
-            Blog
-          </Link>
-        </li>
       </ul>
     </motion.nav>
   );

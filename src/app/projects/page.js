@@ -7,6 +7,48 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: "local-community",
+    title: "Locally: Connect with Your Local Community",
+    date: "Sept.2024",
+    category: "Web Development",
+    type: "Full-Stack Application",
+    description:
+      "Discover events, meet friends, and create lasting memories in your neighborhood. Join Locally and start exploring what's happening around you.",
+    techStack: [
+      "Next.js",
+      "Supabase",
+      "TensorFlow.js",
+      "Universal Sentence Encoder",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Framer Motion",
+      "GSAP",
+    ],
+    status: "Completed",
+    repoLink: "https://github.com/gerardjr42/Locally",
+    siteLink: "https://locally.vercel.app/",
+  },
+  {
+    id: "chat-bot",
+    title: "Serenify: Your Personal AI Therapist",
+    date: "Aug.2024",
+    category: "Web Development",
+    type: "Full-Stack Application",
+    description:
+      "24/7 support, personalized guidance, and a judgment-free space for your mental wellness journey.",
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Material-UI",
+      "openAI API",
+      "Clerk",
+      "Spline",
+    ],
+    status: "Completed",
+    repoLink: "https://github.com/gerardjr42/Serenify-AI",
+    siteLink: "https://serenify-ai.vercel.app/",
+  },
+  {
     id: "pantry-tracker",
     title: "Pantry Tracker: Smart Inventory Management",
     date: "Aug.2024",
