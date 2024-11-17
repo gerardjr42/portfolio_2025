@@ -23,8 +23,6 @@ const projects = [
       "Transfer Learning",
     ],
     status: "In Progress",
-    // repoLink: "https://github.com/yourusername/brain-tumor-classification",
-    // siteLink: "https://yourprojectsite.com/",
   },
   {
     id: "convex-chatverse",
