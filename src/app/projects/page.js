@@ -9,7 +9,7 @@ const projects = [
   {
     id: "convex-chatverse",
     title: "Convex ChatVerse",
-    date: "Nov.2023",
+    date: "Nov.2024",
     category: "Web Development",
     type: "Full-Stack Application",
     description:
