@@ -8,6 +8,25 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: "brain-tumor-classification",
+    title: "Brain Tumor Classification with Neural Networks",
+    date: "Nov.2024",
+    category: "Computer Vision",
+    type: "Machine Learning Application",
+    description:
+      "This project focuses on developing neural network models to classify brain tumors in MRI scans. It involves constructing various architectures using transfer learning and custom convolutional layers. Additionally, the Gemini 1.5 Flash model will be utilized to provide detailed explanations for the predictions.",
+    techStack: [
+      "Python",
+      "Computer Vision",
+      "Neural Networks",
+      "Gemini 1.5 Flash",
+      "Transfer Learning",
+    ],
+    status: "In Progress",
+    // repoLink: "https://github.com/yourusername/brain-tumor-classification",
+    // siteLink: "https://yourprojectsite.com/",
+  },
+  {
     id: "convex-chatverse",
     title: "Convex ChatVerse",
     date: "Nov.2024",

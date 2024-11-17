@@ -56,7 +56,7 @@ export default function AboutMe() {
       title: "Family",
       icon: <Users className="w-5 h-5" />,
       description:
-        "When I'm not immersed in coding, you'll find me cherishing moments with my beloved furry companions, Solin, my 13-year-old Bichon Frise, and Sana, my energetic 4-month-old Australian Shepherd pup. They fill my days with boundless joy and heartwarming companionship. We love exploring the beauty of Prospect Park on our walks and occasionally venture on exciting hikes together, creating unforgettable memories along the way.",
+        "When I'm not immersed in coding, you'll find me cherishing moments with my beloved furry companions, Solin, my 13-year-old Bichon Frise, and Sana, my energetic 8-month-old Australian Shepherd pup. They fill my days with boundless joy and heartwarming companionship. We love exploring the beauty of Prospect Park on our walks and occasionally venture on exciting hikes together, creating unforgettable memories along the way.",
     },
     {
       title: "Running",
