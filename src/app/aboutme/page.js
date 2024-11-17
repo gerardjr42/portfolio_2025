@@ -1,6 +1,7 @@
 "use client";
 
 import { HoverEffect } from "@/components/HoverEffect";
+import { ShootingStarField } from "@/components/ShootingStarField";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -73,6 +74,7 @@ export default function AboutMe() {
 
   return (
     <div className="min-h-screen bg-[#141415] text-white font-geistMono">
+      <ShootingStarField count={5} />
       <div className="container mx-auto px-4 py-24">
         <motion.header
           initial={{ opacity: 0, y: -20 }}
