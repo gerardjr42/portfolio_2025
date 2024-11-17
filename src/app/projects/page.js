@@ -7,6 +7,51 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: "convex-chatverse",
+    title: "Convex ChatVerse",
+    date: "Nov.2023",
+    category: "Web Development",
+    type: "Full-Stack Application",
+    description:
+      "Convex ChatVerse is a real-time communication platform built with modern web technologies. It allows users to create servers, add friends, and engage in text and video communication. This project aims to provide a seamless and interactive user experience for online communities.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Convex",
+      "LiveKit",
+      "Clerk",
+      "Lucide React",
+      "Sonner",
+    ],
+    status: "Completed",
+    repoLink: "https://github.com/gerardjr42/Discord_Clone",
+    siteLink: "https://convex-chatverse.vercel.app/",
+  },
+  {
+    id: "customer-churn-prediction",
+    title: "Customer Churn Prediction App",
+    date: "Oct.2024",
+    category: "Data Science",
+    type: "Machine Learning Application",
+    description:
+      "This Streamlit application predicts customer churn for a bank using various machine learning models. It provides an interactive interface for selecting customers, viewing their details, and getting predictions on their likelihood to churn. The app also generates explanations for the predictions and personalized emails for customer retention. Models used include XGBoost, Random Forest, Support Vector Machine, K-Nearest Neighbors, Naive Bayes, and Decision Tree.",
+    techStack: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "Plotly",
+      "OpenAI",
+      "Google Colab",
+      "Streamlit",
+    ],
+    status: "Completed",
+    repoLink: "https://github.com/gerardjr42/Churning_ML_Project",
+    siteLink: "https://churning-project.streamlit.app/",
+  },
+  {
     id: "local-community",
     title: "Locally: Connect with Your Local Community",
     date: "Sept.2024",
