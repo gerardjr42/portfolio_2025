@@ -74,7 +74,7 @@ const projects = [
   {
     id: "local-community",
     title: "Locally: Connect with Your Local Community",
-    date: "Sept.2024",
+    date: "Oct.2024",
     category: "Web Development",
     type: "Full-Stack Application",
     description:
@@ -204,7 +204,7 @@ const projects = [
   {
     id: "airbnb-numpy-analysis",
     title: "Airbnb Nearby Stays Finder with NumPy",
-    date: "Aug.2024",
+    date: "July.2024",
     category: "Data Science",
     type: "Data Analysis",
     description:
@@ -226,7 +226,7 @@ const projects = [
   {
     id: "airbnb-pandas-analysis",
     title: "Airbnb Listings Filter using Pandas",
-    date: "Aug.2024",
+    date: "July.2024",
     category: "Data Science",
     type: "Data Analysis",
     description:
