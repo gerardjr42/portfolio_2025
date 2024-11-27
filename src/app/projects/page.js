@@ -94,6 +94,28 @@ const projects = [
     siteLink: "https://locally.vercel.app/",
   },
   {
+    id: "ruby-complaint-app",
+    title: "SpendRuby Complaint App",
+    date: "Aug.2024",
+    category: "Web Development",
+    type: "Full-Stack Application / Hackathon Project",
+    description:
+      "A Team Hackathon Project: Ruby Complaint App is an advanced, AI-powered complaint management system built with Next.js. It leverages cutting-edge technologies to streamline the process of handling and analyzing customer complaints for the startup spendruby.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Material-UI",
+      "Firebase",
+      "OpenAI API",
+      "Langchain",
+      "Tesseract",
+      "Google Cloud Text-to-Speech API",
+    ],
+    status: "Completed",
+    repoLink: "https://github.com/m-aishah/ComplAI",
+    siteLink: "https://ruby-complaint-management-system.vercel.app/",
+  },
+  {
     id: "chat-bot",
     title: "Serenify: Your Personal AI Therapist",
     date: "Aug.2024",
