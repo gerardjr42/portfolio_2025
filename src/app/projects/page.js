@@ -22,7 +22,9 @@ const projects = [
       "Gemini 1.5 Flash",
       "Transfer Learning",
     ],
-    status: "In Progress",
+    status: "Completed",
+    repoLink: "https://github.com/gerardjr42/Brain_Tumor_Classification",
+    siteLink: "https://3e5a-35-188-99-187.ngrok-free.app/",
   },
   {
     id: "convex-chatverse",
