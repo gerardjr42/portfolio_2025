@@ -24,7 +24,7 @@ const projects = [
     ],
     status: "Completed",
     repoLink: "https://github.com/gerardjr42/Brain_Tumor_Classification",
-    siteLink: "https://c20d-34-16-181-189.ngrok-free.app/",
+    siteLink: "https://308b-34-125-82-85.ngrok-free.app/",
   },
   {
     id: "convex-chatverse",
