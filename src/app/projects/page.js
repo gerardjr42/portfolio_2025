@@ -91,7 +91,7 @@ const projects = [
     ],
     status: "Completed",
     repoLink: "https://github.com/gerardjr42/Locally",
-    siteLink: "https://locally.vercel.app/",
+    siteLink: "https://www.mylocally.io/",
   },
   {
     id: "ruby-complaint-app",
@@ -255,7 +255,7 @@ const projects = [
     techStack: ["React", "Tailwind CSS", "Framer Motion"],
     status: "Completed",
     repoLink: "https://github.com/gerardjr42/portfolio_Summer2024",
-    siteLink: "https://portfolio-summer2024.vercel.app/",
+    siteLink: "https://portfolio-summer2024-theseus-dev-projects.vercel.app/",
   },
   {
     id: "budgeting-app",
