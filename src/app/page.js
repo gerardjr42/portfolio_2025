@@ -70,8 +70,7 @@ export default function Homepage() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5 }}
               >
-                An innovative AI Software Engineer, with a passion to merge tech
-                and science
+                Code is my canvas, logic is my language
               </motion.p>
             </div>
 
