@@ -39,7 +39,7 @@ export const projects = [
       "Transfer Learning",
     ],
     status: "Completed",
-    repoLink: "https://github.com/gerardjr42/Brain_Tumor_Classification",
+    repoLink: "https://github.com/gerardjr42/Brain_Tumor_Classification_V2",
     siteLink: "https://braintumorclassificationv2.streamlit.app/",
   },
   {
